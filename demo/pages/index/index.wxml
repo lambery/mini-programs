@@ -2,6 +2,6 @@
   <image src="/images/pic.png"></image>
   <text class='user-name'>hello, YOO</text>
   <view class='moto-container'>
-  <text class='moto'>开启小程序</text>
+  <text class='moto'>小羊喔</text>
   </view>
 </view>
