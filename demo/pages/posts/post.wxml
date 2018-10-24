@@ -12,12 +12,13 @@
     </swiper-item>
   </swiper>
   
+  <block wx:for="{{postKey}}" wx:for-item="item" wx:for-index="idx">
   <view class='post-container'>
     <view class='post-author-date'>
       <image class='post-author' src='/images/avatar/1.png'></image>
-      <text class='post-date'>Nov 25 2017</text>
+      <text class='post-date'>{{item.date}}---{{idx}}</text>
     </view>
-    <text class='post-title'>正是霞飞卸妆</text>
+    <text wx:if="{{true}}" class='post-title'>{{postTitle}}</text>
     <image class='post-image' src='/images/post/crab.png'></image>
     <text class='post-content'>飞科电器成立于1999年，公司创始人及实控人均为李丐腾。截至目前，李丐腾直接及间接控制着上市公司89.99%的股份</text>
     <view class='post-like'>
@@ -27,20 +28,6 @@
       <text class='post-like-font'>65</text>      
     </view>
   </view> 
+  </block>
 
-    <view class='post-container'>
-    <view class='post-author-date'>
-      <image class='post-author' src='/images/avatar/1.png'></image>
-      <text class='post-date'>Nov 25 2017</text>
-    </view>
-    <text class='post-title'>正是霞飞卸妆</text>
-    <image class='post-image' src='/images/post/crab.png'></image>
-    <text class='post-content'>飞科电器成立于1999年，公司创始人及实控人均为李丐腾。截至目前，李丐腾直接及间接控制着上市公司89.99%的股份</text>
-    <view class='post-like'>
-      <image class='post-like-image' src='../../images/icon/chat.png'></image>
-      <text class='post-like-font'>92</text>
-      <image class='post-like-image' src='../../images/icon/view.png'></image>
-      <text class='post-like-font'>65</text>      
-    </view>
-  </view> 
 </view>

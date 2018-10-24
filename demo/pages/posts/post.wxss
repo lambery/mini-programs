@@ -60,6 +60,7 @@ swiper image{
 }
 .post-like{
   font-size: 13px;
+  display: flex;
   flex-direction: row;
   line-height: 16px;
   margin-left: 10px;
