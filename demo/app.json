@@ -1,10 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/posts/post"
+    "pages/posts/post",
+    "pages/posts/detail/detail"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#b3d4db",
+    "navigationBarBackgroundColor": "#405f80",
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "小羊"
   }

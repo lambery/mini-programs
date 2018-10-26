@@ -1,0 +1,21 @@
+
+<view class='container'>
+  <image class='header-image' src="{{postKey.headImgSrc}}">
+  </image>
+  <image class='audoi' src='/images/music/music-start.png'></image>
+  <view class='author-date'>
+    <image class='author-img' src='/images/avatar/2.png'></image>
+    <text class="author">huge</text>
+    <text class="consttext">发表于</text>
+    <text class="consttext">3天前</text>
+  </view>
+  <text class="title">炉石创伤好玩吗</text>
+  <view class='tool'>
+    <view class='circle-img'>
+      <image src='/images/icon/collection.png'></image>
+      <image class='share-img' src='/images/icon/share.png'></image>
+    </view>
+    <view class='xian'></view>
+  </view>
+  <text class='detail'>数据的发丝时代华纳i阿婆键盘怕法案觉得卡德加安静的破案家啊大家啊的，安徽倒萨的爱思好噶红色的爱的hi哦奥迪是阿嫂好的</text>
+</view>
