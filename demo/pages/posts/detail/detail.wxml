@@ -12,7 +12,8 @@
   <text class="title">炉石创伤好玩吗</text>
   <view class='tool'>
     <view class='circle-img'>
-      <image src='/images/icon/collection.png'></image>
+      <image wx:if="{{conllected}}" catchtap='onColl' src='/images/icon/collection.png'></image>
+      <image wx:else catchtap='onColl' src='/images/icon/collection-anti.png'></image>
       <image class='share-img' src='/images/icon/share.png'></image>
     </view>
     <view class='xian'></view>
