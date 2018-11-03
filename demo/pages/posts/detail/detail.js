@@ -77,7 +77,22 @@ Page({
       }
     })
   },
-
+  onShareTap: function (event){
+    wx.showActionSheet({
+      itemList: [
+        "分享给好友",
+        "分享到朋友圈",
+        "分享到QQ",
+        "分享给微博"
+      ],
+      success(res) {
+        console.log(res.tapIndex)
+      },
+      fail(res) {
+        console.log(res.errMsg)
+      }
+    })
+  },
   // onColl2: function(event){
   //   wx.removeStorageSync('key');
   //   //wx.clearStorageSync();清除所有
