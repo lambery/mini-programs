@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    isPlay:false
   },
 
   /**
@@ -92,6 +92,28 @@ Page({
         console.log(res.errMsg)
       }
     })
+  },
+  OnMusicTap:function(event){
+   // console.log(this.data.postKey)
+    var isPlay = this.data.isPlay;
+    if (isPlay){
+      wx.pauseBackgroundAudio();
+      this.setData({
+        isPlay: false
+      })
+    } else{
+      wx.playBackgroundAudio({
+        dataUrl: this.data.postKey.music.dataUrl,
+        title: this.data.postKey.music.title,
+        coverImgUrl: 'http://img0.imgtn.bdimg.com/it/u=3300316170,3146479431&fm=27&gp=0.jpg'
+      })
+      this.setData({
+        isPlay: true
+      })
+      
+    }
+
+    
   },
   // onColl2: function(event){
   //   wx.removeStorageSync('key');
