@@ -1,6 +1,6 @@
 
 <view class='container'>
-  <image class='header-image' src="{{postKey.headImgSrc}}">
+  <image class='header-image' src="{{isPlay?postKey.music.coverImgUrl:postKey.headImgSrc}}">
   </image>
   <image catchtap='OnMusicTap' class='audoi' src="{{isPlay?'/images/music/music-stop.png':'/images/music/music-start.png'}}"></image>
   <view class='author-date'>

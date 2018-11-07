@@ -35,6 +35,17 @@ Page({
       postsCollected[postId] = false;
       wx.setStorageSync('posts_collected', postsCollected)
     }
+    var that = this;
+    wx.onBackgroundAudioPlay(function(){
+      that.setData({
+        isPlay:true
+      })
+    });
+    wx.onBackgroundAudioPause(function () {
+      that.setData({
+        isPlay: false
+      })
+    })
   },
   onColl: function(event) {
     var postsCollected = wx.getStorageSync('posts_collected');
@@ -111,9 +122,7 @@ Page({
         isPlay: true
       })
       
-    }
-
-    
+    }    
   },
   // onColl2: function(event){
   //   wx.removeStorageSync('key');
